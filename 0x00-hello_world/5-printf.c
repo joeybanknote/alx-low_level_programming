@@ -1,4 +1,4 @@
-#iclude <stdio.h>
+#include <stdio.h>
 /**
  * main - A program that a print a line using the printf function
  * Return: 0 (success)
