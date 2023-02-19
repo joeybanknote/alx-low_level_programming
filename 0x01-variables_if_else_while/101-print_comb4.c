@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Write a program that prints all possible different combinations of three digits.
+ * Description: Write a program that prints all possible different combinations of three digits.
  * All your code should be in the main function
  * Return: 0
  */
