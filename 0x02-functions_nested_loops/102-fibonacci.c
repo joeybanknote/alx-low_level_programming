@@ -2,11 +2,10 @@
 
 /**
  * main - Prints the first 52 fibonacci numbers
- * Retrun: Nothing!
+ * Return: 0
  */
 
 int main(void)
-
 {
 
 	int i = 0;
