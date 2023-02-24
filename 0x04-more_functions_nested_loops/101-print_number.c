@@ -2,47 +2,24 @@
 
 /**
  * print_number - prints an integer
- * @n: random integer
- * Return: void
+ * @n: integer to be printed
  */
 void print_number(int n)
 {
-	char ld, cr;
-	int r;
-	int ct = 0;
+	unsigned int n1;
 
 	if (n < 0)
 	{
-		_putchar ('-');
-		ld = (char)('0' - (n % 10));
-		n = n / -10;
+		n1 = -n;
+		_putchar('-');
 	}
-
 	else
 	{
-		ld = (char)((n % 10) + '0');
-		n = n / 10;
+		n1 = n;
 	}
-
-	r = 0;
-	while (n > 0)
+	if (n1 / 10)
 	{
-		r = r * 10 + (n % 10);
-		n = n / 10;
-		ct++;
+		print_number(n1 / 10);
 	}
-
-	while (r > 0)
-	{
-		cr = (char)((r % 10) + '0');
-		_putchar(cr);
-		r = r / 10;
-		ct--;
-	}
-	while (ct != 0)
-	{
-		_putchar('0');
-		ct--;
-	}
-	_putchar(ld);
+	_putchar((n1 % 10) + '0');
 }
