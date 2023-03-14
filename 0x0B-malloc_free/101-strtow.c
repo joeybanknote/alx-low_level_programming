@@ -27,6 +27,7 @@ flag = 1;
 
 	return (w);
 }
+
 /**
  * **strtow - splits a string into words
  * @str: string to split
